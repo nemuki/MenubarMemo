@@ -5,7 +5,6 @@
 //  Created by Naoki Takahashi on 2022/09/03.
 //
 
-import Foundation
 import SwiftUI
 
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -18,7 +17,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         self.statusBarItem = NSStatusBar.system.statusItem(withLength: CGFloat(NSStatusItem.variableLength))
         guard let button = self.statusBarItem.button else { return }
         // アイコンの設定
-        button.image = NSImage(systemSymbolName: "camera.macro", accessibilityDescription: nil)
+        button.image = NSImage(systemSymbolName: "pencil.and.ellipsis.rectangle", accessibilityDescription: nil)
+        button.imagePosition = NSControl.ImagePosition.imageLeft
+        button.title = "Be Integrity"
         // アクションの設定
         button.action = #selector(menuButtonAction(sender:))
         // 右クリックの設定
