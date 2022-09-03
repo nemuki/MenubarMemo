@@ -14,6 +14,7 @@
 		BD009EA428C2D21D003E8B77 /* MenubarMemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD009EA328C2D21D003E8B77 /* MenubarMemoTests.swift */; };
 		BD009EAE28C2D21D003E8B77 /* MenubarMemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD009EAD28C2D21D003E8B77 /* MenubarMemoUITests.swift */; };
 		BD009EB028C2D21D003E8B77 /* MenubarMemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD009EAF28C2D21D003E8B77 /* MenubarMemoUITestsLaunchTests.swift */; };
+		BD009EBD28C2D405003E8B77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD009EBC28C2D405003E8B77 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		BD009EA928C2D21D003E8B77 /* MenubarMemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MenubarMemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD009EAD28C2D21D003E8B77 /* MenubarMemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenubarMemoUITests.swift; sourceTree = "<group>"; };
 		BD009EAF28C2D21D003E8B77 /* MenubarMemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenubarMemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BD009EBC28C2D405003E8B77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				BD009E9528C2D21D003E8B77 /* Assets.xcassets */,
 				BD009E9A28C2D21D003E8B77 /* MenubarMemo.entitlements */,
 				BD009E9728C2D21D003E8B77 /* Preview Content */,
+				BD009EBC28C2D405003E8B77 /* AppDelegate.swift */,
 			);
 			path = MenubarMemo;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD009EBD28C2D405003E8B77 /* AppDelegate.swift in Sources */,
 				BD009E9428C2D21B003E8B77 /* ContentView.swift in Sources */,
 				BD009E9228C2D21B003E8B77 /* MenubarMemoApp.swift in Sources */,
 			);
