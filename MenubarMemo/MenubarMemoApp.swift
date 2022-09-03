@@ -10,8 +10,6 @@ import SwiftUI
 @main
 struct MenubarMemoApp: App {
     var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+        Settings { }
     }
 }
