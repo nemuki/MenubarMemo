@@ -98,11 +98,11 @@
 			isa = PBXGroup;
 			children = (
 				BD009E9128C2D21B003E8B77 /* MenubarMemoApp.swift */,
+				BD009EBC28C2D405003E8B77 /* AppDelegate.swift */,
 				BD009E9328C2D21B003E8B77 /* ContentView.swift */,
 				BD009E9528C2D21D003E8B77 /* Assets.xcassets */,
 				BD009E9A28C2D21D003E8B77 /* MenubarMemo.entitlements */,
 				BD009E9728C2D21D003E8B77 /* Preview Content */,
-				BD009EBC28C2D405003E8B77 /* AppDelegate.swift */,
 			);
 			path = MenubarMemo;
 			sourceTree = "<group>";

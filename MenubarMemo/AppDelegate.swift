@@ -21,9 +21,24 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         button.image = NSImage(systemSymbolName: "camera.macro", accessibilityDescription: nil)
         // アクションの設定
         button.action = #selector(menuButtonAction(sender:))
+        // 右クリックの設定
+        button.sendAction(on: [.leftMouseUp, .rightMouseUp])
     }
     
     @objc func menuButtonAction(sender: AnyObject) {
+        guard let event = NSApp.currentEvent else { return }
+        if event.type == NSEvent.EventType.rightMouseUp {
+            let menu = NSMenu()
+            menu.addItem(
+                withTitle: NSLocalizedString("Quit", comment: "Quit app"),
+                action: #selector(terminate),
+                keyEquivalent: ""
+            )
+            statusBarItem.menu = menu
+            statusBarItem.button?.performClick(nil)
+            statusBarItem.menu = nil
+            return
+        }
         guard let button = self.statusBarItem.button else { return }
         if self.popover.isShown {
             self.popover.performClose(sender)
@@ -33,5 +48,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             // 他の位置をタップすると消える
             self.popover.contentViewController?.view.window?.makeKey()
         }
+    }
+    
+    @objc func terminate() {
+        NSApp.terminate(self)
     }
 }
