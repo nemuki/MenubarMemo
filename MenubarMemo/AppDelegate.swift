@@ -19,7 +19,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // アイコンの設定
         button.image = NSImage(systemSymbolName: "pencil.and.ellipsis.rectangle", accessibilityDescription: nil)
         button.imagePosition = NSControl.ImagePosition.imageLeft
-        button.title = "Be Integrity"
+        button.title = UserDefaults.standard.string(forKey: "memo") ?? ""
         // アクションの設定
         button.action = #selector(menuButtonAction(sender:))
         // 右クリックの設定

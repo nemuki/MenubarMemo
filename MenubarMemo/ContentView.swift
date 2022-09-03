@@ -8,9 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var memo = UserDefaults.standard.string(forKey: "memo") ?? ""
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack{
+            TextField(memo, text: $memo)
+                .onSubmit {
+                    UserDefaults.standard.set(self.memo, forKey: "memo")
+                }
+                .textFieldStyle(RoundedBorderTextFieldStyle()) // 入力域を枠で囲む
+                .padding()
+        }
     }
 }
 
